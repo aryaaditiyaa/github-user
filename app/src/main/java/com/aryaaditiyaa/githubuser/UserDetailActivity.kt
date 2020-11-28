@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_user_detail.*
 
-class UserDetail : AppCompatActivity() {
+class UserDetailActivity : AppCompatActivity() {
 
     companion object {
         const val KEY_USER = "key_user"

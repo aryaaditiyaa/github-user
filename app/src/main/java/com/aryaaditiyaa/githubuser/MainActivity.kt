@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             )
             listUser.add(user)
         }
+        dataAvatar.recycle()
         return listUser
     }
 
@@ -60,8 +61,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedUser(user: User) {
-        val detailUserIntent = Intent(this, UserDetail::class.java)
-        detailUserIntent.putExtra(UserDetail.KEY_USER, user)
+        val detailUserIntent = Intent(this, UserDetailActivity::class.java)
+        detailUserIntent.putExtra(UserDetailActivity.KEY_USER, user)
         startActivity(detailUserIntent)
     }
 }
